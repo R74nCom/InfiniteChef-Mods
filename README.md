@@ -17,4 +17,6 @@ To remove a mod, press the X button next to its name. This will require a refres
 
 See [example_mod.js](https://github.com/R74nCom/InfiniteChef-Mods/tree/main/example_mod.js) to learn the basics of modding.
 
+To test your mod, you can usually copy-paste the entire script into your browser's console. Usually this is done by pressing F12 and going to the 'Console' tab.
+
 Create a fork of [InfiniteChef-Mods](https://github.com/R74nCom/InfiniteChef-Mods) on GitHub, add or edit your mod file, and make a pull request to submit it for review.
