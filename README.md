@@ -10,3 +10,5 @@ See all the available mods [here](https://github.com/R74nCom/InfiniteChef-Mods).
 4. Press the Plus (+) button.
 
 That's it! Unless the mod requires a refresh, changes should take effect immediately.
+
+To remove a mod, press the X button next to its name. This will require a refresh to take effect.
