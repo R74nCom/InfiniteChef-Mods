@@ -16,7 +16,7 @@ addIngredient("fire",{
 
 addIngredient("scp-409",{
     color:"#CBD8D9",
-    type:"rhubarb",
+    type:"boulder",
     shape:"crystal",
     hidden:true,
 });
