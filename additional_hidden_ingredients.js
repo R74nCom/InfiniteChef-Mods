@@ -1,6 +1,6 @@
 addIngredient("thought",{
     color:"#E2E2E2",
-    type:"salt",
+    type:"energy",
     shape:"thought_balloon",
     hidden:true,
     adj:"sapient"
@@ -8,7 +8,7 @@ addIngredient("thought",{
 
 addIngredient("fire",{
     color:"#F18133",
-    type:"crab",
+    type:"energy",
     shape:"flame",
     hidden:true,
     adj:"flaming"
