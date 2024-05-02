@@ -3,16 +3,16 @@
 // Add a basic ingredient using the 'fruit' ingredient as a base
 addIngredient("apple",{
     color:"#ff1f40", //red
-    type:"fruit"
+    type:"fruit" //will inherit all properties of the 'fruit' ingredient
 });
 
 // Add a detailed ingredient with custom Shape and other properties
 // All Shape IDs can be found here: https://R74n.com/shapes/
 // A list of properties can be found at the top of: https://R74n.com/cook/foodData.js
-addIngredient("apple",{
+addIngredient("finished_apple",{ //ID should be lowercase with underscores
     color:"#ff1f40", //red
     innerColor:"#ffeda4", //beige
-    type:"fruit",
+    type:"apple", ///type can be any other ingredient
     shape:"fruit_bipod_stem"
 });
 
