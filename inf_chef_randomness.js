@@ -1,36 +1,3 @@
-urlParams = new URLSearchParams(window.location.search);
-var WFSN = (urlParams.get("enableNsf" + String.fromCharCode(119)) !== null)
-
-function naiveReverse(string) { //Does not work for astral characters, which are stored as surrogate pairs
-    return string.split("").toReversed().join("")
-};
-
-if(WFSN) {
-	ingredients.cum = {
-		type: "liquid",
-		color: [ "#d6d6cb" ],
-		keywords: naiveReverse('tun,knups,zzij,mreps,nemes'),
-		dishWeight: -55,
-		adj: "cummy",
-		"h": 60,
-		"s": 12,
-		"l": 82,
-		"shape": "liquid"
-	};
-
-	ingredients.poop = {
-		shape:"blob",
-		type:"paste",
-		color:["#5c3508"],
-		h: 32,
-		s: 84,
-		l: 20,
-		adj:"toxic",
-		hidden:true,
-		keywords:naiveReverse('drut,2#,2 rebmun,gnud,tacs,secef,parc,tihs,ood')
-	}
-}
-
 ingredients.monosodium_glutamate = {
     "type": "powder",
     "shape": "powder",
