@@ -1,4 +1,4 @@
-addingredient('amogus',{
+addIngredient('amogus',{
   name: 'amogus',
   keywords: 'sus,imposter',
   shape: 'sus',
