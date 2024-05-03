@@ -2,6 +2,6 @@ addIngredient('amogus',{
   name: 'amogus',
   keywords: 'sus,imposter',
   shape: 'sus',
-  color: '#red',
+  color: '#ff0000',
   placedShape: 'sus',
 });
