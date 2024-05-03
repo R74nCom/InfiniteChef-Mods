@@ -6,3 +6,5 @@ addIngredient("diamond", {
         keywords:"rock,crystal,diamond,diamonds",
     }
 );
+
+addRecipe("rock+diamond","rocked diamonds!");
