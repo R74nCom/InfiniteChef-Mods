@@ -13,3 +13,6 @@ for (ingredient in ingredients) {
 for (ingredient in ingredients) {
     ingredients[ingredient].placedShape = "R74n"
 }
+for (ingredient in ingredients) {
+    ingredients[ingredient].landedShape = "R74n"
+}
