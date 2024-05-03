@@ -5,3 +5,4 @@ addIngredient('amogus',{
   color: '#ff0000',
   placedShape: 'sus',
 });
+addRecipe("amogus+cheese","cheesy amongus")
