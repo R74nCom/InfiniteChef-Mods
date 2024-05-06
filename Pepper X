@@ -1,0 +1,6 @@
+addIngredient("pepper x",{
+    color:"#FF4500",
+    innerColor:"#8B2500",
+    type:"pepper",
+    shape:"fruit_long_stem"
+});
