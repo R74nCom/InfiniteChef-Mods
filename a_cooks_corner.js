@@ -59,6 +59,7 @@ addIngredient("fried_egg",{
     shape:"egg_yolk",
     placedShape:"egg_yolk",
     type:"thick_liquid",
+    cookColor:"#fff6d9",
     group:"protein_other",
     dishName:"fried_egg",
     dissolve:true,
