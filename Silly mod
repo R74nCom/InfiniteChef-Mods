@@ -1,0 +1,6 @@
+addIngredient("Baller",{
+    color:"#d7272e",
+    innerColor:"#69261d",
+    type:"meat",
+    shape:"circle_ml"
+});
