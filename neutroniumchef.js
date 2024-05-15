@@ -13,7 +13,7 @@ addIngredient("tritiated_water", {
   glow:"#e031dd",
   adj: "radioactive"
 });
-addIngridient ("heavy_water", {
+addIngredient ("heavy_water", { //I ong spelled this "addIngridient" I should be coding when I'm more awake ong
   color:"#22b5cc",
   type:"liquid",
   reactions: {
