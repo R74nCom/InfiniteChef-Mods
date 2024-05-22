@@ -114,6 +114,15 @@ addIngredient("spice_berry",{
 });
 
 //fish
+addIngredient("ccornerfish",{
+    color:"#4edeff",
+    innerColor:"#daafaf",
+    cookColor:"#d0891f",
+    type:"meat",
+    shape:"fish",
+    keywords:"seafood,pescetarian",
+    pin:true
+});
 /*
 addIngredient("pufferfish",{
         color:"#005982",
@@ -300,6 +309,89 @@ addIngredient("truffle_oil",{
 });
 
 
+addIngredient("orange_dye",{
+    type:"red_dye",
+    color:"#FFBB00",
+    adj:"orange",
+});
+
+addIngredient("yellow_dye",{
+    type:"red_dye",
+    color:"#FFEE00",
+    adj:"yellow",
+});
+
+addIngredient("lime_dye",{
+    type:"red_dye",
+    color:"#00FF00",
+    adj:"lime",
+});
+
+addIngredient("green_dye",{
+    type:"red_dye",
+    color:"#10c100",
+    adj:"green",
+});
+
+addIngredient("cyan_dye",{
+    type:"red_dye",
+    color:"#00FFFF",
+    adj:"cyan",
+});
+
+addIngredient("light_blue_dye",{
+    type:"red_dye",
+    color:"#00CBFF",
+    adj:"light blue",
+});
+
+addIngredient("blue_dye",{
+    type:"red_dye",
+    color:"#0000FF",
+    adj:"blue",
+});
+
+addIngredient("purple_dye",{
+    type:"red_dye",
+    color:"#FF00FF",
+    adj:"purple",
+});
+
+addIngredient("magenta_dye",{
+    type:"red_dye",
+    color:"#BF00FF",
+    adj:"magenta",
+});
+
+addIngredient("pink_dye",{
+    type:"red_dye",
+    color:"#BF00FF",
+    adj:"magenta",
+});
+
+addIngredient("white_dye",{
+    type:"red_dye",
+    color:"#FFFFFF",
+    adj:"white",
+});
+
+addIngredient("light_gray_dye",{
+    type:"red_dye",
+    color:"#C6C6C6",
+    adj:"light_gray",
+});
+
+addIngredient("gray_dye",{
+    type:"red_dye",
+    color:"#F7F7F7",
+    adj:"gray",
+});
+
+addIngredient("black_dye",{
+    type:"red_dye",
+    color:"#000000",
+    adj:"black",
+});
 
 //tools
 
@@ -379,7 +471,7 @@ addRecipe("&stack:eggplant+parmesan+tomato_sauce","eggplant parmesan");
 
 addRecipe("&bowl:rice+sugar","rice pudding");
 
-addRecipe("&stack:blueberry+sugar+bread","blueberry tart");
+addRecipe("&stack:fruit+sugar+bread","fruit tart");
 
 addRecipe("&bowl:pumpkin+milk","pumpkin soup");
 
