@@ -116,11 +116,12 @@ addIngredient("sand",{
     dissolve:false,
 });
 
-addIngredient("paint",{
-    type:"spice",
-    adj: "sharp",
-    color:"#5A6B7B",
-    dissolve:false,
+addIngredient("blue_paint",{
+    type:"dye",
+    adj: "gooey",
+    shape:"liquid",
+    color:"#497DFF",
+    dissolve:true,
 });
 
 editIngredient("boulder",{
@@ -146,7 +147,7 @@ addRecipe("shnorp_mushroom+broth+cream","shrnorp soup")
 
 addRecipe("corn_flakes+broccoli+sand","sandtrader's sandy desert")
 
-addRecipe("glass_shards+dye","isoextension's CD-ROM")
+addRecipe("glass_shards+blue_paint","isoextension's CD-ROM")
 
 addRecipe("apple+caramel","applicon's glazed apples")
 
