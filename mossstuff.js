@@ -92,6 +92,7 @@ addIngredient("twix",{
 
 addIngredient("frog_leg",{
     type:"poultry",
+    color: "#D3A772",
     keywords:"frog, snorp",
 });
 
@@ -101,8 +102,35 @@ addIngredient("shrnorp_mushroom",{
     color:"#BF9372",
 });
 
+addIngredient("glass_shards",{
+    type:"spice",
+    adj: "sharp",
+    color:"#5A6B7B",
+    dissolve:false,
+});
+
+addIngredient("sand",{
+    type:"spice",
+    adj: "sandy",
+    color:"#D5DB87",
+    dissolve:false,
+});
+
+addIngredient("paint",{
+    type:"spice",
+    adj: "sharp",
+    color:"#5A6B7B",
+    dissolve:false,
+});
+
+editIngredient("boulder",{
+    broken:"sand",
+});
+
 
 addRecipe("moss+moss","moss salad")
+
+addRecipe("sand+ryan","sandboxels")
 
 addRecipe("moss+plant","garden")
 
@@ -116,9 +144,19 @@ addRecipe("twix+beef+twix","lord jesus twix's burger")
 
 addRecipe("shnorp_mushroom+broth+cream","shrnorp soup")
 
+addRecipe("corn_flakes+broccoli+sand","sandtrader's sandy desert")
+
+addRecipe("glass_shards+dye","isoextension's CD-ROM")
+
+addRecipe("apple+caramel","applicon's glazed apples")
+
+addRecipe("moss+plant","garden")
+
 addRecipe("bread+frog_leg+bread","snorp sandwich")
 
-addRecipe("noodles+frog_leg+broccoli","ztunedd zoodle")
+addRecipe("kale+salmon+alfalfa_sprout","salmonfishy's salmon dinner")
+
+addRecipe("noodles+frog_leg+broccoli","sandboxels supreme")
 
 addRecipe("cake+chocolate+chocolate_icing?","lucifer's lava cake")
 
