@@ -124,7 +124,7 @@ editIngredient("uranium",{
 addRecipe("bread+jellyfish","jellyfish roll");
 addRecipe("bread+true_krabby_meat+bread?","krabbydog");
 addRecipe("uranium_dust+furikake+milkshake","kelp shake");
-addRecipe("&stack:bottom_bun+true_krabby_meat+lettuce+cheese+onion+onion+tomato+tomato+ketchup+mustard+pickle+pickle+mayonnaise+top_bun+sesame","krabby patty");
-addRecipe("&stack:bottom_bun+jellyfish+lettuce+cheese+onion+onion+tomato+tomato+ketchup+mustard+pickle+pickle+mayonnaise+top_bun+sesame","jelly patty",);
+addRecipe("&stack:bottom_bun+true_krabby_meat+lettuce+cheese+barbecue_sauce+tomato+ketchup+mustard+pickle+top_bun","krabby patty");
+addRecipe("&stack:bottom_bun+jellyfish+lettuce+cheese+barbecue_sauce+tomato+ketchup+mustard+pickle+top_bun","jelly patty",);
 addRecipe("chocolate+rice_treat+kelp_nougat","kelp nougat crunch");
 addRecipe("krabby patty+kelp shake+kelp nougat crunch","krusty krab meal");
