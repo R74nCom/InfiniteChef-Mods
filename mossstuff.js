@@ -26,7 +26,6 @@ addIngredient("soggy",{
         bouillon_cube: { set1:"broth", set2:null },
     },
     adj:"soggy",
-    pin:true,
     boilPoint:100,
     boilInto:"steam",
     freezePoint:0,
@@ -66,6 +65,138 @@ addIngredient("stench",{
     hidden:true
 });
 
+addIngredient("candy_bar",{
+    type:"candy",
+    shape: "ribbed",
+    color:"#AC6547",
+    keywords:"candy,sweet",
+    broken:"ground_candy_bar",
+    hidden:true
+});
+
+addIngredient("ground_candy_bar",{
+    color:"#7C4934",
+    type:"powder",
+    shape:"powder_rough",
+    hidden:true,
+    dishWeight:-20,
+    adj:"candy_bar",
+    meltPoint:45,
+});
+
+addIngredient("twix",{
+    type:"candy_bar",
+    color:"#924F32",
+    hidden:false
+});
+
+addIngredient("frog_leg",{
+    type:"poultry",
+    color: "#D3A772",
+    keywords:"frog, snorp",
+});
+
+addIngredient("shrnorp_mushroom",{
+    name: "shrnorp",
+    type:"mushroom",
+    color:"#BF9372",
+});
+
+addIngredient("glass_shards",{
+    type:"spice",
+    adj: "sharp",
+    color:"#5A6B7B",
+    dissolve:false,
+});
+
+addIngredient("sand",{
+    type:"spice",
+    adj: "sandy",
+    color:"#D5DB87",
+    dissolve:false,
+});
+
+addIngredient("blue_paint",{
+    type:"dye",
+    adj: "gooey",
+    shape:"liquid",
+    color:"#497DFF",
+    dissolve:true,
+});
+
+editIngredient("boulder",{
+    broken:"sand",
+});
+
+
+addRecipe("moss+moss","moss salad")
+
+addRecipe("sand+ryan","sandboxels")
+
 addRecipe("moss+plant","garden")
+
 addRecipe("battery_acid+noodles","battery acid spaghetti")
+
 addRecipe("battery_acid+cake","battery acid pie")
+
+addRecipe("ground_candy_bar+ice_cream","twix suprise")
+
+addRecipe("twix+beef+twix","lord jesus twix's burger")
+
+addRecipe("shnorp_mushroom+broth+cream","shrnorp soup")
+
+addRecipe("corn_flakes+broccoli+sand","sandtrader's sandy desert")
+
+addRecipe("glass_shards+blue_paint","isoextension's CD-ROM")
+
+addRecipe("apple+caramel","applicon's glazed apples")
+
+addRecipe("moss+plant","garden")
+
+addRecipe("bread+frog_leg+bread","snorp sandwich")
+
+addRecipe("kale+salmon+alfalfa_sprout","salmonfishy's salmon dinner")
+
+addRecipe("noodles+frog_leg+broccoli","sandboxels supreme")
+
+addRecipe("cake+chocolate+chocolate_icing?","lucifer's lava cake")
+
+addRecipe("acai+milk+corn_flake","just an acai bowl")
+
+addRecipe("smallmouth_bass+rice+seaweed","sb's sushi")
+
+addRecipe("moss+butter+seaweed","mossy moss mash")
+
+addRecipe("eggplant+goat_cheese","expolyst's eggplant")
+
+addRecipe("sausage+rice+black_pepper","jayd's jambalaya")
+
+addRecipe("pasta+cream+cheese","rtx's ravioli")
+
+addRecipe("bread+meat+ketchup+bread","matrem's meatloaf")
+
+addRecipe("lemonade+apple+cactus_pear","just an account's juice")
+
+addRecipe("bread+goat_cheese+tomato+bread","goobernaut's grilled cheese")
+
+addRecipe("moss+yogurt+milkshake","mossbot's moss smoothie")
+
+addRecipe("spaghetti+goat_cheese","infinite chef infinite pasta")
+
+addRecipe("pizza+twix","lord jesus twix's pizza")
+
+addRecipe("shrnorp_mushroom+shrimp+butter","shrnorp shrimp")
+
+addRecipe("twix+taco_shell+ice_cream","twix tart")
+
+addRecipe("moss+cake+sprinkles?","moss' favorite moss cake")
+
+addRecipe("&bowl:apple+cherry+jam","red birdly's red bowl")
+
+addRecipe("gelatin+mango","ggod's invisible mango jelly")
+
+addRecipe("energy+gelatin","nomealfound")
+
+addRecipe("pasta+cheese+turmeric","goldninja's golden pasta")
+
+addRecipe("bottom_bun+ham+top_bun","steamed hams")
