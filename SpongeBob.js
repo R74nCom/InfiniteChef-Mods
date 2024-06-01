@@ -1,6 +1,3 @@
-// More info about enabling, testing, and submitting mods: https://R74ncom.github.io/InfiniteChef-Mods/
-
-// Add a basic ingredient using the 'fruit' ingredient as a base
 addIngredient("nougat",{
     type:"thick_liquid",
     color:"#b69885",
@@ -78,12 +75,15 @@ addIngredient("jellyfish",{
     keywords:"pink jellyfish,seafood",
     adj:"squishy",
 });
-addIngredient("spoon",{
-    type:"utensil",
-    shape:"rod_circle",
+addIngredient("uranium_dust",{
+    type:"powder",
+    color:"#526752",
+    glow:"#00ff00",
+    adj:"irritating",
+    dissolve:true,
+    shape:"powder_rough",
     hidden:true,
-    height:0.5,
-    r:[90,135]
+    dishWeight:-50
 });
 
 editIngredient("seaweed",{
@@ -107,10 +107,24 @@ editIngredient("rice",{
     pin:true,
     broken:"flour"
 });
+editIngredient("crab",{
+        color:"#f14d38",
+        type:"crustacean",
+        keywords:"crustacean,seafood,mr krabs"
+});
+editIngredient("uranium",{
+    shape:"rock",
+    color:"#526752",
+    glow:"#00ff00",
+    adj:"glowy",
+    broken:"uranium_dust",
+    hidden:true
+});
 
 addRecipe("bread+jellyfish","jellyfish roll");
 addRecipe("bread+true_krabby_meat+bread?","krabbydog");
-addRecipe("uranium+furikake+milkshake","kelp shake");
+addRecipe("uranium_dust+furikake+milkshake","kelp shake");
 addRecipe("&stack:bottom_bun+true_krabby_meat+lettuce+cheese+onion+onion+tomato+tomato+ketchup+mustard+pickle+pickle+mayonnaise+top_bun+sesame","krabby patty");
 addRecipe("&stack:bottom_bun+jellyfish+lettuce+cheese+onion+onion+tomato+tomato+ketchup+mustard+pickle+pickle+mayonnaise+top_bun+sesame","jelly patty",);
 addRecipe("chocolate+rice_treat+kelp_nougat","kelp nougat crunch");
+addRecipe("krabby patty+kelp shake+kelp nougat crunch","krusty krab meal");
