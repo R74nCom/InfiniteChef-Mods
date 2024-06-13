@@ -3,6 +3,8 @@ The central hub for easily-accessible mods for Infinite Chef.
 
 See all the available mods [here](https://github.com/R74nCom/InfiniteChef-Mods).
 
+![Infinite Chef Critter Soup Screenshot](https://r74n.com/cook/screenshots/critter-soup.webp)
+
 # How to Enable Mods
 1. Go to the official [Infinite Chef](https://r74n.com/cook/) website.
 2. Press the Settings gear icon in the toolbar.
