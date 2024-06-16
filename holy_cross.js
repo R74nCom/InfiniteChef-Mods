@@ -5,7 +5,7 @@ addIngredient("cross",{
     type:"holy",
     shape:"obelus",
     reactions: {
-        water: {set2: "wine"}
+        "water": {set2: "wine"}
     }
 });
 addRecipe("cross+twix","lord jesus twix")
