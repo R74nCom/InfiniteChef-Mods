@@ -477,8 +477,6 @@ addIngredient("bittergourd",{
     adj:"bitter"
 });
 
-//editing the ingredients
-
 editIngredient("rambutan",{
 broken:"rambutan_seed"
 });
@@ -494,8 +492,6 @@ editIngredient("milk",{
 editIngredient("lychee",{
     broken:"lychee_seed"
 });
-
-// adding the recipes
 
 addRecipe("=pork+chili_pepper+onion+calamansi?+soy_sauce?+msg?", "pork_sisig");
 
