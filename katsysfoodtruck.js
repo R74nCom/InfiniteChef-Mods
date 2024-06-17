@@ -96,4 +96,20 @@ addIngredient("paper", {
     broken: "powder"
 });
 
+addIngredient("paper", {
+    color: "#ffffff",
+    shape: "wavy_sheet_flat",
+    type: "other"
+    stackShape: "rectangle_thinnest"
+    broken: "powder"
+});
+
+addIngredient("cookbook", {
+    color: "#21561F",
+    innerColor: "#4EB44A"
+    shape: "book",
+    type: "other"
+    stackShape: "rectangle_thin"
+    broken: "paper"
+});
 
