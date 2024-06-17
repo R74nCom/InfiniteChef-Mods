@@ -65,7 +65,7 @@ addIngredient('mircoplastics", {
     color: "#AFEDFF",
     shape: "dots",
     type: "gas",
-    transparency: "20"
+    opacity: "20"
     hidden: "true"
 });
 
