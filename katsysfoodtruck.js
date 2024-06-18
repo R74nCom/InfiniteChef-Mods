@@ -127,9 +127,15 @@ addIngredient("cheesecake", {
     color: "#ffffff",
     innerColor: "#FFEFC8"
     meltPoint: 50,
-    meltInto: "cream",
+    meltInto: "cream_cheese",
     shape: "wedge",
     type: "cheese",
-    broken: "cream",
+    broken: "cream_cheese",
 });
 
+addIngredient("money", {
+    color: "#237323",
+    innerColor: "#61D661"
+    shape: "sheet_wavy_flat",
+    type: "other",
+    broken: "powder",
