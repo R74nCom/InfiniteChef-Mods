@@ -9,3 +9,5 @@ addIngredient("cross",{
     }
 });
 addRecipe("cross+twix","lord jesus twix")
+addRecipe("cross+bean+bread","HOLY SHIT")
+addRecipe("cross+beef","Holy Cow")
