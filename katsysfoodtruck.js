@@ -124,8 +124,8 @@ addIngredient("cookbook", {
 });
 
 addIngredient("cheesecake", {
-    color: "#ffffff",
-    innerColor: "#FFEFC8"
+    color: "#E3652A",
+    innerColor: "#FFEDDF"
     meltPoint: 50,
     meltInto: "cream_cheese",
     shape: "wedge",
@@ -139,3 +139,29 @@ addIngredient("money", {
     shape: "sheet_wavy_flat",
     type: "other",
     broken: "powder",
+    
+addIngredient("chicken_nugget", {
+    color: "#FFC9C2",
+    cookColor:"#D37F41",
+    shape: "bean_l",
+    type: "meat",
+    broken: "ground_chicken",
+});
+
+editIngredient("water", {
+    color: "#47C7FF",
+    shape: "drop",
+    placedShape: "puddle",
+    type: "water",
+    opacity: "70",
+});
+
+editIngredient("marshmellow", {
+    meltPoint: 30,
+    meltInto: "fluff",
+
+// fun recipes i made because i wanted them
+addRecipe("&bowl:ground_chicken+noodles+broth","chicken noodle soup");
+addRecipe("&stack:cheesecake+strawberry","strawberry cheesecake");
+addRecipe("&stack:chicken_nugget+french_fry+french_fry","nuggets n' fries");
+addRecipe("rice+fluff+sugar","rice_krispy_treat");
