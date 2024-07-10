@@ -10,14 +10,10 @@ addIngredient("ice_pop", {
     meltPoint: 20,
     meltInto: "juice",
     innerColor: "#1814FF",
-    stackShape: "rod_to_thick"
-    broken: "juice"
+    stackShape: "rod_to_thick",
+    broken: "juice",
     keywords: "popsicle,ice,cold,sweet"
 })
-
-function randomizeHue() {
-    ingredients.ice_pop.h = Math.floor(Math.random() * 360);
-});
 
 addIngredient("vomit", {
     color: "#608A5A",
@@ -32,26 +28,20 @@ addIngredient("bottle", {
     shape: "bottle_ridged",
     type: "other",
     innerColor: "##9BE8FF",
-    broken: "mircoplastics"
+    broken: "microplastic",
     keywords: "bottle,water,cap,plastic,container"
 });
 
-addIngredient('mircoplastics", {
-    color: "#7E878A",
-    shape: "powder_rough",
-    type: "powder",
-});
-
-  addIngredient("soap", {
+addIngredient("soap", {
     color: "#DAF7FF",
     shape: "rectangle",
     type: "other",
     stackShape: "rectangle_thin",
     broken: "soap_powder",
     keywords: "clean",
- reactions: {
+    reactions: {
         water: { set1:"bubbles" },
-});
+}});
 
  addIngredient("soap_powder", {
     color: "#DAF7FF",
@@ -59,13 +49,13 @@ addIngredient('mircoplastics", {
     type: "powder",
  reactions: {
         water: { set1:"bubbles" },
-});
+}});
 
  addIngredient("bubbles", {
     color: "#AFEDFF",
     shape: "dots",
     type: "gas",
-    opacity: "20"
+    opacity: "20",
     hidden: "true"
 });
 
@@ -87,14 +77,8 @@ addIngredient("gummy_worm", {
     keywords: "candy,gummy,sugar,sweet",
   reactions: {
         citric_acid: { set1:"sour_gummy_worm" },
-})
+}})
 
-function randomizeHue() {
-    ingredients.gummy_worm.h = Math.floor(Math.random() * 360);
-})
-function randomizeHue() {
-    ingredients.sour_gummy_worm.h = Math.floor(Math.random() * 360);
-});
 addIngredient("sour_gummy_worm", {
     color: "#ff0000",
     shape: "worm",
@@ -116,7 +100,7 @@ addIngredient("paper", {
 
 addIngredient("cookbook", {
     color: "#21561F",
-    innerColor: "#4EB44A"
+    innerColor: "#4EB44A",
     shape: "book",
     type: "other",
     stackShape: "rectangle_thin",
@@ -125,7 +109,7 @@ addIngredient("cookbook", {
 
 addIngredient("cheesecake", {
     color: "#E3652A",
-    innerColor: "#FFEDDF"
+    innerColor: "#FFEDDF",
     meltPoint: 50,
     meltInto: "cream_cheese",
     shape: "wedge",
@@ -135,10 +119,11 @@ addIngredient("cheesecake", {
 
 addIngredient("money", {
     color: "#237323",
-    innerColor: "#61D661"
+    innerColor: "#61D661",
     shape: "sheet_wavy_flat",
     type: "other",
     broken: "powder",
+})
     
 addIngredient("chicken_nugget", {
     color: "#FFC9C2",
@@ -158,7 +143,8 @@ editIngredient("water", {
 
 editIngredient("marshmellow", {
     meltPoint: 30,
-    meltInto: "fluff",
+    meltInto: "fluff"
+})
 
 // fun recipes i made because i wanted them
 addRecipe("&bowl:ground_chicken+noodles+broth","chicken noodle soup");
