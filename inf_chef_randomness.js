@@ -19,7 +19,7 @@ ingredients.sus = {
     "color": [
         "#cf3f4f"
     ],
-    "dissolve": true,
+    "dissolve": false,
     "adj": "suspicious",
     "dishWeight": -75,
     "keywords": "amogus,baka,among us",
