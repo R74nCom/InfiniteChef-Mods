@@ -1,42 +1,42 @@
 //more flavors and recipes soon!
 
 
-addIngredient("Oreo",{
+addIngredient("oreo",{
 type:"candy", 
 shape:"disc_hole",
 brokenShape:"squares_some_flat",
 color:"#291d13",
 });
 
-addIngredient("KitKat",{
+addIngredient("kitkat",{
 type:"candy",
 brokenShape:"squares_some_flat",
 shape:"star_prism",
 color:"#561b09",
 });
 
-addIngredient("Green Tea KitKat",{
+addIngredient("green_tea_kitkat",{
 type:"candy",
 shape:"star_prism",
 brokenShape:"squares_some_flat",
 color:"#bacb8d",
 });
 
-addIngredient("Strawberry KitKat",{
+addIngredient("strawberry_kitkat",{
 type:"candy",
 shape:"star_prism",
 brokenShape:"squares_some_flat",
 color:"#f6afb3",
 });
 
-addIngredient("Golden Oreo",{
+addIngredient("golden_oreo",{
 type:"candy",
 shape:"disc_hole",
 brokenShape:"squares_some_flat",
 color:"#b17a16",
 });
 
-addIngredient("Mint Oreo",{
+addIngredient("mint_oreo",{
 type:"candy",
 shape:"disc_hole",
 brokenShape:"squares_some_flat",
@@ -44,56 +44,56 @@ color:"#a2ca96",
 
 });
 
-addIngredient("Strawberry Oreo",{
+addIngredient("strawberry_oreo",{
 type:"candy",
 shape:"disc_hole",
 brokenShape:"squares_some_flat",
 color:"#dc9ca6",
 });
 
-addIngredient("Melon Oreo",{
+addIngredient("melon_oreo",{
 type:"candy",
 shape:"disc_hole",
 brokenShape:"squares_some_flat",
 color:"#84bb42",
 });
 
-addIngredient("Watermelon Oreo",{
+addIngredient("watermelon_oreo",{
 type:"candy",
 shape:"disc_hole",
 brokenShape:"squares_some_flat",
 color:"#c70124",
 });
 
-addIngredient("Mint KitKat",{
+addIngredient("mint_kitkat",{
 type:"candy",
 shape:"star_prism",
 brokenShape:"squares_some_flat",
 color:"#95c08a",
 });
 
-addIngredient("Pumpkin Pie KitKat",{
+addIngredient("pumpkin_pie_kitkat",{
 type:"candy",
 shape:"star_prism",
 brokenShape:"squares_some_flat",
 color:"#e07d22",
 });
 
-addIngredient("Ruby Cocoa KitKat",{
+addIngredient("ruby_cocoa_kitkat",{
 type:"candy",
 shape:"star_prism",
 brokenShape:"squares_some_flat",
 color:"#d1628e",
 });
 
-addIngredient("Mango Oreo",{
+addIngredient("mango_oreo",{
 type:"candy",
 shape:"disc_hole",
 brokenShape:"squares_some_flat",
 color:"#d39635",
 });
 
-addIngredient("Mango KitKat",{
+addIngredient("mango_kitkat",{
 type:"candy",
 shape:"star_prism",
 brokenShape:"squares_some_flat",
@@ -107,6 +107,6 @@ addRecipe("oreo+golden_oreo+mint_oreo+strawberry_oreo+melon_oreo+watermelon_oreo
 
 addRecipe("oreo+kitkat","OreKat");
 
-addRecipe("kitKat+oreo","KitReo");
+addRecipe("kitkat+oreo","KitReo");
 
-addRecipe("kitkat+green_tea_kitkat+strawberry_kitkat+mint_kitkat+pumpkin_pie_kitkat+ruby_cocoa_kitkat+mango_kitkat","The Holy Kitkat");
+addRecipe("kitkat+green_tea_kitkat+strawberry_kitkat+mint_kitkat+pumpkin_pie_kitkat+ruby_cocoa_kitkat+mango_kitkat","The Holy kitkat");
