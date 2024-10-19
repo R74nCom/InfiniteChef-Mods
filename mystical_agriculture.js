@@ -78,3 +78,16 @@ addIngredient("creative_essence", {
     "adj": "creative",
     "type": "mystical_essence"
 });
+
+
+addRecipe("inferium_essence+apple","inferium apple")
+
+addRecipe("prudentium_essence+apple","prudentium apple")
+
+addRecipe("intermedium_essence+apple","intermedium apple")
+
+addRecipe("superium_essence+apple","superium apple")
+
+addRecipe("supremium_essence+apple","supremium apple")
+
+addRecipe("insanium_essence+apple","insanium apple")
