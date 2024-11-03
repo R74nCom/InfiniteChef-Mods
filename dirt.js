@@ -48,6 +48,8 @@ addRecipe("&stack:dirt+dirt","dirt castle");
 // Add a recipe that can't have any other ingredients
 addRecipe("=dirt+dirt","dirt sandwitch");
 
+addRecipe("dirt+cheese", "dirty cheese bruh");
+addRecipe("dirt+cheese_sauce", "dirty i like my cheese drippy bruh");
 // Add a recipe with an optional ingredient
 addRecipe("cake+sprinkles?+chocolate+dirt","dirty chocolate cake");
 
