@@ -3,7 +3,10 @@
 // Add a basic ingredient using the 'jam' ingredient as a base
 addIngredient("dirt",{
     color:"#593b1d", //brown
-    type:"jam" //will inherit all properties of the 'fruit' ingredient
+    type:"jam", //will inherit all properties of the 'fruit' ingredient
+    reactions: {
+    water: {set1: "mud"}
+    }
 });
 
 // Add a detailed ingredient with custom Shape and other properties
@@ -20,9 +23,9 @@ addIngredient("mud",{
     type:"water",
     color:"#593b1d",
     reactions: {
-        meat: { set1:"dirty meat" },
-        vegetable: { set1:"molten chaos", tempMin:60 },
-        oil: { set1: "dirty oil" }
+        // meat: { set1:"" },
+       // vegetable: { set1:"", tempMin:60 },
+       // oil: { set1: "dirty oil" }
     }   
 });
 
@@ -30,9 +33,9 @@ addIngredient("dirt_castle", {
   type:"bread",
   color:"#593b1d",
   reactions: {
-    meat: { set1: "dirty castle meat"},
-    vegetable { set1: "vegetable castle unwashed"},
-    oil: { set1: "oily castle"}
+     //meat: { set1: "dirty castle meat"},
+     //vegetable { set1: "vegetable castle unwashed"},
+   // oil: { set1: ""}
   }
 });
 // Change attributes of existing ingredients
@@ -40,7 +43,7 @@ addIngredient("dirt_castle", {
 addRecipe("water+dirt","mud")
 
 // Add a recipe only in Stack Mode
-addRecipe("&stack:dirt+dirt","dirt_castle");
+addRecipe("&stack:dirt+dirt","dirt castle");
 
 // Add a recipe that can't have any other ingredients
 addRecipe("=dirt+dirt","dirt sandwitch");
