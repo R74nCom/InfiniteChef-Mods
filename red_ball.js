@@ -1,5 +1,5 @@
 addIngredient("red_ball", {
-        shape:"rock_ball",
+        shape:"circle_s",
         color:["#ff0000"],
         hidden:false
     }
