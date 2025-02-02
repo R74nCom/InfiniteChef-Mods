@@ -18,5 +18,6 @@ addIngredient("nutritional_mush",{
 addIngredient("nutrient_bar",{
     color:"#929659",
     shape:"rectangle_thin",
-    keywords:"nutrient"
+    keywords:"nutrient",
+    broken:"nutritional_mush"
 });
