@@ -71,6 +71,7 @@ addIngredient("meringue",{
     color:"#e1e8eb",
     shape:"gas_thin",
     type:"cookie",
+    broken:"sugar",
 });
 
 //vegetables
