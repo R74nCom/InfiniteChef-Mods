@@ -83,12 +83,6 @@ addIngredient("eye",{
   shape:"ball_strung",
   keywords:"human,organ",
 });
-addIngredient("testicles",{
-    type:"meat",
-    color:"bf267d",
-  shape:"oval_bi",
-  keywords:"human,organ,balls,testes,nuts",
-});
 addRecipe("fetus+poison","abortion");
 addRecipe("fetus+knife","abortion");
 addRecipe("broth+brain","brain_stew");
