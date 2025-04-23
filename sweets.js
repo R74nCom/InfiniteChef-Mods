@@ -17,8 +17,8 @@ addIngredient("colorful_shelled_pieces",{
     type:"circle_xs",
     meltPoint: 120,
     meltInto: "caramel",
-    dishName: "skittles"
-    brokenShape: "dots_some_flat"
+    dishName: "skittles",
+    brokenShape: "dots_some_flat",
     keywords: "skittles, candy, pieces"
 });
 addIngredient("candy_heart",{ 
@@ -157,7 +157,7 @@ addIngredient("candy_corn",{
     color:"#FF8C49", "#FFFFFF", "#FFE949", //orange
     type:"triangle_round",
     scale: 0.5,
-    brokenShape: "dots_some_flat"
+    brokenShape: "dots_some_flat",
     meltPoint: 120,
     meltInto: "caramel",
     keywords: "candy, halloween, corn"
@@ -167,7 +167,7 @@ addIngredient("pop_rocks",{
     type:"dots_some_flat",
     meltPoint: 120,
     meltInto: "caramel",
-    keywords: "candy, powder, rocks, pop, popping"
+    keywords: "candy, powder, rocks, pop, popping",
     onCollide: (self, other) => {
         changeIngredient(other,["steam"]);
 });
@@ -228,10 +228,10 @@ addIngredient("mint_ice_cream",{
     meltInto: "cream"
 });
 editIngredient("sugar",{
-    whipped: "cotton_candy"
+    whipped: "cotton_candy",
 });
 editIngredient("pistachio",{
-    brokenShape: "liquid_splat"
+    brokenShape: "liquid_splat",
 });
 addRecipe("sugar+doll","diabetic person");
 
@@ -290,6 +290,8 @@ addRecipe("=caramel+baking soda","dalgona");
 addRecipe("sugar+water+fruit juice","sorbet");
 
 addRecipe("flour+oil+butter+apple","apple strudel");
+
+addRecipe("flour+oil+butter+apple juice","apple strudel");
 
 addRecipe("&stack:phyllo+syrup+nut?","baklava");
 
