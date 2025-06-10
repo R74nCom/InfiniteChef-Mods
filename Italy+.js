@@ -25,7 +25,7 @@ addIngredient("rigatoni", {
   innerColor: "#5b4c09",
   type: "pasta",
   shape: "cylinder_topless",
-  scale: "0.9"
+  scale: "0.9",
   keywords:"pasta, italy, italian",
 });
 
@@ -42,7 +42,6 @@ addIngredient("ziti", {
 addIngredient("ricotta", {
   color: "#eeeeee",
   innerColor: "#999999",
-  type: "cheese",
   type:"thick_liquid",
   shape: "clumps",
   keywords:"cheese, italy, italian",
@@ -66,7 +65,7 @@ addIngredient("Fusilli", {
 });
 
 
-addIngredient("Ravioli.", {
+addIngredient("Ravioli", {
   color: "#c8a81c",
   innerColor: "#5b4c09",
   type: "pasta",
@@ -104,7 +103,7 @@ addIngredient("asiago", {
 
 addIngredient("grissini", {
   color: "#b59038",
-  innerColor: "#5948208",
+  innerColor: "#594820",
   type: "bread",
   scale: "1.5",
   shape: "rectangle_thinnest",
@@ -166,7 +165,7 @@ addIngredient("biscotti", {
 
 addIngredient("limoncello", {
   color: "#FFFF30",
-  innerColor: "##ffff81",
+  innerColor: "#ffff81",
   type: "liquid",
   shape: "liquid",
   adj: "limon",
@@ -357,7 +356,15 @@ addRecipe("tofu+peanut_butter+ginger+lime", "thai_peanut_tofu_stirfry")
 addRecipe("&stack:bread+cheddar+tomato+lettuce", "classic_club_sandwich_stack")
 
 
-
+addTool("pastafyer", {
+  func: function(placed) {
+    placed.shape = "semitorus_thick_hollow";  // Change shape only
+  },
+  onClick: function(x, y) { console.log(x, y); },
+  shape: "semitorus_thick_hollow",
+  spin: true,
+  color: "#c4a41b"  // pasta yellow color
+});
 
 
 
