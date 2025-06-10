@@ -20,13 +20,23 @@ addIngredient("spaghetti", {
   }
 });
 
-addIngredient("Rigatoni", {
+addIngredient("rigatoni", {
+  color: "#c8a81c",
+  innerColor: "#5b4c09",
+  type: "pasta",
+  shape: "cylinder_topless",
+  scale: "0.9"
+  keywords:"pasta, italy, italian",
+});
+
+addIngredient("ziti", {
   color: "#c8a81c",
   innerColor: "#5b4c09",
   type: "pasta",
   shape: "rod_hollow",
   keywords:"pasta, italy, italian",
 });
+
 
 
 addIngredient("ricotta", {
@@ -266,8 +276,8 @@ addIngredient("cherry_tomato", {
   color: "#e74c3c",
   innerColor: "#a31b2e",
   type: "vegetable",
-  shape: "circle",
-  scale: "0.4",
+  shape: "circle_s",
+  scale: "0.9",
   keywords: "vegetable, tomato, cherry",
 });
 
@@ -288,3 +298,66 @@ addIngredient("salsa_verde", {
   shape: "liquid",
   keywords: "salsa, sauce, parsley",
 });
+
+addRecipe("spaghetti+ricotta+cherry_tomato+marjoram?", "spaghetti_ricotta_fresca");
+addRecipe("duck+blood_orange+honey+salt?+pepper?", "duck_a_lorange");
+addRecipe("ziti+ricotta+tomato_sauce+mozzarella+parmesan?", "baked_ziti");
+addRecipe("burrata+cherry_tomato+basil+olive_oil+salt?", "burrata_caprese");
+addRecipe("rabbit+carrot+onion+potato?+broth", "rabbit_stew");
+addRecipe("duck+blood_orange+butter?+thyme?", "duck_a_lorange")
+addRecipe("biscotti+espresso_powder", "espresso_biscotti")
+addRecipe("rabbit+polenta+red_onion+fennel_bulb?", "rabbit_ragu_polenta")
+addRecipe("couscous+swiss_chard+red_onion+romano?", "couscous_verdura")
+addRecipe("blood_orange+fennel_bulb+white_wine_vinegar+marjoram?", "fennel_orange_salad")
+addRecipe("ricotta+flour+egg+sugar+lemon_zest", "ricotta_pancakes")
+addRecipe("duck+red_wine+garlic+onion", "braised_duck")
+addRecipe("couscous+zucchini+olive_oil+lemon_juice", "couscous_salad")
+addRecipe("burrata+fig+balsamic_vinegar+mint?", "burrata_fig_plate")
+addRecipe("swiss_chard+garlic+olive_oil+red_pepper_flakes", "sauteed_chard")
+addRecipe("ricotta+spinach+parmesan+egg", "ricotta_spinach_filling")
+addRecipe("fennel_bulb+orange+radicchio+vinaigrette", "fennel_radicchio_salad")
+addRecipe("rabbit+mustard+cream+white_wine", "rabbit_mustard_sauce")
+addRecipe("duck+potato+thyme+garlic", "duck_confit_plate")
+addRecipe("couscous+tomato+cucumber+mint+lemon_juice", "couscous_tabbouleh")
+addRecipe("&stack:grissini+prosciutto+fig", "grissini_prosciutto_stack")
+addRecipe("&stack:burrata+cherry_tomato+olive_oil", "stacked_burrata")
+addRecipe("&stack:ricotta+biscotti+espresso_powder", "espresso_parfait")
+addRecipe("salsa_verde+boiled_potato+egg", "argentine_potato_salad")
+addRecipe("spaghetti+duck+olive_oil+black_pepper", "duck_pasta")
+addRecipe("blood_orange+duck+arugula+vinaigrette", "duck_salad")
+addRecipe("chicken+lemon+rosemary", "roast_lemon_rosemary_chicken")
+addRecipe("beef+onion+red_wine", "classic_beef_bourguignon")
+addRecipe("tomato+mozzarella+basil", "caprese_salad")
+addRecipe("eggplant+tomato+sundried_tomato+garlic", "eggplant_parmesan_bake")
+addRecipe("salmon+dill+lemon", "grilled_dill_salmon")
+addRecipe("mushroom+cream+garlic", "creamy_garlic_mushroom_sauce")
+addRecipe("pasta+clams+garlic+white_wine", "spaghetti_alle_vongole")
+addRecipe("potato+cream+cheddar", "cheddar_potato_gratin")
+addRecipe("tofu+soy_sauce+ginger+garlic", "ginger_garlic_tofu_stirfry")
+addRecipe("shrimp+chili+lime", "spicy_lime_shrimp")
+addRecipe("beef+carrot+celery+onion", "hearty_beef_stew")
+addRecipe("zucchini+tomato+feta+olive_oil", "greek_style_zucchini_salad")
+addRecipe("pork+apple+sage", "sage_apple_pork_roast")
+addRecipe("lentils+carrot+onion+cumin", "spiced_lentil_soup")
+addRecipe("duck+orange+ginger", "orange_ginger_duck")
+addRecipe("chickpeas+spinach+tomato+cumin", "spinach_chickpea_curry")
+addRecipe("pumpkin+coconut_milk+chili", "spicy_pumpkin_coconut_soup")
+addRecipe("beef+black_pepper+soy_sauce", "peppercorn_teriyaki_steak")
+addRecipe("cauliflower+curry_powder+coconut_milk", "curried_coconut_cauliflower")
+addRecipe("chicken+curry_powder+yogurt+garlic", "creamy_tikka_masala_chicken")
+addRecipe("rice+chicken+peas+carrot", "classic_chicken_fried_rice")
+addRecipe("beef+onion+soy_sauce+ginger", "ginger_soy_teriyaki_beef")
+addRecipe("pasta+shrimp+tomato+garlic", "garlic_tomato_shrimp_pasta")
+addRecipe("mushroom+spinach+cream+parmesan", "creamy_spinach_mushroom_pasta")
+addRecipe("egg+spinach+cheddar", "fluffy_spinach_cheddar_omelette")
+addRecipe("quinoa+black_beans+corn+lime", "zesty_quinoa_black_bean_salad")
+addRecipe("sweet_potato+black_beans+corn+chili", "spicy_sweet_potato_bowl")
+addRecipe("chicken+peanut_butter+soy_sauce+lime", "thai_peanut_chicken_bowl")
+addRecipe("tofu+peanut_butter+ginger+lime", "thai_peanut_tofu_stirfry")
+addRecipe("&stack:bread+cheddar+tomato+lettuce", "classic_club_sandwich_stack")
+
+
+
+
+
+
