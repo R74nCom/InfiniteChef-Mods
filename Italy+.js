@@ -322,30 +322,6 @@ addIngredient("pufferfish", {
     fish: {
       set1: "inflated_puffer",
     }
-    cheese: {
-      set1: "inflated_puffer",
-    }
-    liquid: {
-      set1: "inflated_puffer",
-    }
-    meat: {
-      set1: "inflated_puffer",
-    }
-    metal: {
-      set1: "inflated_puffer",
-    }
-    bread: {
-      set1: "inflated_puffer",
-    }
-    powder: {
-      set1: "inflated_puffer",
-    }
-    insect: {
-      set1: "inflated_puffer",
-    }
-    pasta: {
-      set1: "inflated_puffer",
-    }
   }
 });
 
