@@ -25,7 +25,7 @@ addIngredient("rigatoni", {
   innerColor: "#5b4c09",
   type: "pasta",
   shape: "cylinder_topless",
-  scale: "0.9",
+  scale: "0.8",
   keywords:"pasta, italy, italian",
 });
 
@@ -133,7 +133,7 @@ addIngredient("apple_cider", {
   type: "liquid",
   shape: "liquid",
   adj: "cider",
-  keywords:"vinegar, apple, cider",
+  keywords:"apple, cider",
 });
 
 addIngredient("white_wine_vinegar", {
@@ -186,6 +186,7 @@ addIngredient("couscous", {
   color: "#f2e8b3",
   innerColor: "#b39a67",
   type: "grain",
+  scale: ".7",
   shape: "dots_some_flat",
   keywords: "grain, italy, italian",
 });
@@ -202,6 +203,7 @@ addIngredient("duck", {
   color: "#c99b7a",
   innerColor: "#7a463a",
   type: "meat",
+  scale: ".9",
   shape: "cutlet",
   keywords: "meat",
 });
@@ -218,6 +220,7 @@ addIngredient("rabbit", {
   color: "#d9afb3",
   innerColor: "#8a6e42",
   type: "meat",
+  scale: ".9",
   shape: "cutlet",
   keywords: "meat",
 });
@@ -227,6 +230,7 @@ addIngredient("burrata", {
   innerColor: "#dddddd",
   type: "cheese",
   shape: "blob_short",
+  scale: "1.1",
   keywords: "cheese, italy, italian",
 });
 
@@ -235,6 +239,7 @@ addIngredient("dried_fig", {
   innerColor: "#4a1f14",
   type: "fruit",
   shape: "bulb",
+  scale: ".9",
   keywords: "fruit, dried",
 });
 
@@ -298,62 +303,119 @@ addIngredient("salsa_verde", {
   keywords: "salsa, sauce, parsley",
 });
 
+addIngredient("quinoa", {
+  color: "#C8A46C",
+  innerColor: "#866d46",
+  type: "powder",
+  shape: "dots_some_flat",
+  keywords: "salsa, sauce, parsley",
+});
+
+addIngredient("pufferfish", {
+  color: "#f1c27d",
+  innerColor: "#d99a5b",
+  type: "fish",
+  shape: "fish",
+  scale: 1,
+  keywords: "puffer, fish",  
+  reactions: {
+    fish: {
+      set1: "inflated_puffer",
+    }
+    cheese: {
+      set1: "inflated_puffer",
+    }
+    liquid: {
+      set1: "inflated_puffer",
+    }
+    meat: {
+      set1: "inflated_puffer",
+    }
+    metal: {
+      set1: "inflated_puffer",
+    }
+    bread: {
+      set1: "inflated_puffer",
+    }
+    powder: {
+      set1: "inflated_puffer",
+    }
+    insect: {
+      set1: "inflated_puffer",
+    }
+    pasta: {
+      set1: "inflated_puffer",
+    }
+  }
+});
+
+addIngredient("inflated_puffer", {
+  color: "#f1c27d",
+  innerColor: "#d99a5b",
+  type: "fish",
+  shape: "fish",
+  scale: 3,
+  keywords: "puffer, fish",
+});
+
+
+
 addRecipe("spaghetti+ricotta+cherry_tomato+marjoram?", "spaghetti_ricotta_fresca");
-addRecipe("duck+blood_orange+honey+salt?+pepper?", "duck_a_lorange");
-addRecipe("ziti+ricotta+tomato_sauce+mozzarella+parmesan?", "baked_ziti");
+addRecipe("duck+blood_orange+honey+salt?+black_pepper?", "duck_a_lorange");
+addRecipe("ziti+ricotta+tomato_sauce+mozzarella?+parmesan?", "baked_ziti");
 addRecipe("burrata+cherry_tomato+basil+olive_oil+salt?", "burrata_caprese");
 addRecipe("rabbit+carrot+onion+potato?+broth", "rabbit_stew");
-addRecipe("duck+blood_orange+butter?+thyme?", "duck_a_lorange")
-addRecipe("biscotti+espresso_powder", "espresso_biscotti")
-addRecipe("rabbit+polenta+red_onion+fennel_bulb?", "rabbit_ragu_polenta")
-addRecipe("couscous+swiss_chard+red_onion+romano?", "couscous_verdura")
-addRecipe("blood_orange+fennel_bulb+white_wine_vinegar+marjoram?", "fennel_orange_salad")
-addRecipe("ricotta+flour+egg+sugar+lemon_zest", "ricotta_pancakes")
-addRecipe("duck+red_wine+garlic+onion", "braised_duck")
-addRecipe("couscous+zucchini+olive_oil+lemon_juice", "couscous_salad")
-addRecipe("burrata+fig+balsamic_vinegar+mint?", "burrata_fig_plate")
-addRecipe("swiss_chard+garlic+olive_oil+red_pepper_flakes", "sauteed_chard")
-addRecipe("ricotta+spinach+parmesan+egg", "ricotta_spinach_filling")
-addRecipe("fennel_bulb+orange+radicchio+vinaigrette", "fennel_radicchio_salad")
-addRecipe("rabbit+mustard+cream+white_wine", "rabbit_mustard_sauce")
-addRecipe("duck+potato+thyme+garlic", "duck_confit_plate")
-addRecipe("couscous+tomato+cucumber+mint+lemon_juice", "couscous_tabbouleh")
-addRecipe("&stack:grissini+prosciutto+fig", "grissini_prosciutto_stack")
-addRecipe("&stack:burrata+cherry_tomato+olive_oil", "stacked_burrata")
-addRecipe("&stack:ricotta+biscotti+espresso_powder", "espresso_parfait")
-addRecipe("salsa_verde+boiled_potato+egg", "argentine_potato_salad")
-addRecipe("spaghetti+duck+olive_oil+black_pepper", "duck_pasta")
-addRecipe("blood_orange+duck+arugula+vinaigrette", "duck_salad")
-addRecipe("chicken+lemon+rosemary", "roast_lemon_rosemary_chicken")
-addRecipe("beef+onion+red_wine", "classic_beef_bourguignon")
-addRecipe("tomato+mozzarella+basil", "caprese_salad")
-addRecipe("eggplant+tomato+sundried_tomato+garlic", "eggplant_parmesan_bake")
-addRecipe("salmon+dill+lemon", "grilled_dill_salmon")
-addRecipe("mushroom+cream+garlic", "creamy_garlic_mushroom_sauce")
-addRecipe("pasta+clams+garlic+white_wine", "spaghetti_alle_vongole")
-addRecipe("potato+cream+cheddar", "cheddar_potato_gratin")
-addRecipe("tofu+soy_sauce+ginger+garlic", "ginger_garlic_tofu_stirfry")
-addRecipe("shrimp+chili+lime", "spicy_lime_shrimp")
-addRecipe("beef+carrot+celery+onion", "hearty_beef_stew")
-addRecipe("zucchini+tomato+feta+olive_oil", "greek_style_zucchini_salad")
-addRecipe("pork+apple+sage", "sage_apple_pork_roast")
-addRecipe("lentils+carrot+onion+cumin", "spiced_lentil_soup")
-addRecipe("duck+orange+ginger", "orange_ginger_duck")
-addRecipe("chickpeas+spinach+tomato+cumin", "spinach_chickpea_curry")
-addRecipe("pumpkin+coconut_milk+chili", "spicy_pumpkin_coconut_soup")
-addRecipe("beef+black_pepper+soy_sauce", "peppercorn_teriyaki_steak")
-addRecipe("cauliflower+curry_powder+coconut_milk", "curried_coconut_cauliflower")
-addRecipe("chicken+curry_powder+yogurt+garlic", "creamy_tikka_masala_chicken")
-addRecipe("rice+chicken+peas+carrot", "classic_chicken_fried_rice")
-addRecipe("beef+onion+soy_sauce+ginger", "ginger_soy_teriyaki_beef")
-addRecipe("pasta+shrimp+tomato+garlic", "garlic_tomato_shrimp_pasta")
-addRecipe("mushroom+spinach+cream+parmesan", "creamy_spinach_mushroom_pasta")
-addRecipe("egg+spinach+cheddar", "fluffy_spinach_cheddar_omelette")
-addRecipe("quinoa+black_beans+corn+lime", "zesty_quinoa_black_bean_salad")
-addRecipe("sweet_potato+black_beans+corn+chili", "spicy_sweet_potato_bowl")
-addRecipe("chicken+peanut_butter+soy_sauce+lime", "thai_peanut_chicken_bowl")
-addRecipe("tofu+peanut_butter+ginger+lime", "thai_peanut_tofu_stirfry")
-addRecipe("&stack:bread+cheddar+tomato+lettuce", "classic_club_sandwich_stack")
+addRecipe("duck+blood_orange+butter?+thyme??", "duck_a_lorange");  // same as above
+addRecipe("biscotti+espresso_powder", "espresso_biscotti");
+addRecipe("rabbit+polenta+red_onion+fennel_bulb?", "rabbit_ragu_polenta");
+addRecipe("couscous+swiss_chard+red_onion+romano?", "couscous_verdura");
+addRecipe("blood_orange+fennel_bulb+white_wine_vinegar+marjoram?", "fennel_orange_salad");
+addRecipe("ricotta+flour+egg+sugar+lemon_zest", "ricotta_pancakes");
+addRecipe("duck+red_wine+garlic+onion", "braised_duck");
+addRecipe("couscous+zucchini+olive_oil+lemon_juice", "couscous_salad");
+addRecipe("burrata+fig+balsamic_vinegar+mint?", "burrata_fig_plate");
+addRecipe("swiss_chard+garlic+olive_oil+red_pepper_flakes", "sauteed_chard");
+addRecipe("ricotta+spinach+parmesan+egg", "ricotta_spinach_filling");
+addRecipe("fennel_bulb+orange+radicchio+vinaigrette", "fennel_radicchio_salad");
+addRecipe("rabbit+mustard+cream+white_wine", "rabbit_mustard_sauce");
+addRecipe("duck+potato+thyme+garlic", "duck_confit_plate");
+addRecipe("couscous+tomato+cucumber+mint+lemon_juice", "couscous_tabbouleh");
+addRecipe("&stack:grissini+prosciutto+fig", "grissini_prosciutto_stack");
+addRecipe("&stack:burrata+cherry_tomato+olive_oil", "stacked_burrata");
+addRecipe("&stack:ricotta+biscotti+espresso_powder", "espresso_parfait");
+addRecipe("salsa_verde+potato+egg", "argentine_potato_salad");
+addRecipe("spaghetti+duck+olive_oil+black_pepper", "duck_pasta");
+addRecipe("blood_orange+duck+arugula+vinaigrette", "duck_salad");
+addRecipe("chicken+lemon+rosemary", "roast_lemon_rosemary_chicken");
+addRecipe("beef+onion+red_wine", "classic_beef_bourguignon");
+addRecipe("tomato+mozzarella+basil", "caprese_salad");
+addRecipe("eggplant+tomato+sun_dried_tomato+garlic", "eggplant_parmesan_bake");
+addRecipe("salmon+dill+lemon", "grilled_dill_salmon");
+addRecipe("mushroom+cream+garlic", "creamy_garlic_mushroom_sauce");
+addRecipe("clam+garlic+white_wine", "spaghetti_alle_vongole");
+addRecipe("potato+cream+cheddar", "cheddar_potato_gratin");
+addRecipe("tofu+soy_sauce+ginger_root+garlic", "ginger_garlic_tofu_stirfry");
+addRecipe("shrimp+chili_pepper+lime", "spicy_lime_shrimp");
+addRecipe("beef+carrot+celery+onion", "hearty_beef_stew");
+addRecipe("zucchini+tomato+feta+olive_oil", "greek_style_zucchini_salad");
+addRecipe("pork+apple+sage", "sage_apple_pork_roast");
+addRecipe("lentils+carrot+onion+cumin", "spiced_lentil_soup");
+addRecipe("duck+orange+ginger_root", "orange_ginger_duck");
+addRecipe("chickpea+spinach+tomato+cumin", "spinach_chickpea_curry");
+addRecipe("pumpkin+coconut_milk+chili_pepper", "spicy_pumpkin_coconut_soup");
+addRecipe("beef+black_pepper+soy_sauce", "peppercorn_teriyaki_steak");
+addRecipe("cauliflower+curry_powder+coconut_milk", "curried_coconut_cauliflower");
+addRecipe("chicken+curry_powder+yogurt+garlic", "creamy_tikka_masala_chicken");
+addRecipe("rice+chicken+peas+carrot", "classic_chicken_fried_rice");
+addRecipe("beef+onion+soy_sauce+ginger_root", "ginger_soy_teriyaki_beef");
+addRecipe("pasta+shrimp+tomato+garlic", "garlic_tomato_shrimp_pasta");
+addRecipe("mushroom+spinach+cream+parmesan", "creamy_spinach_mushroom_pasta");
+addRecipe("egg+spinach+cheddar", "fluffy_spinach_cheddar_omelette");
+addRecipe("quinoa+black_bean+corn+lime", "zesty_quinoa_black_bean_salad");
+addRecipe("sweet_potato+black_bean+corn+chili_pepper", "spicy_sweet_potato_bowl");
+addRecipe("chicken+peanut_butter+soy_sauce+lime", "thai_peanut_chicken_bowl");
+addRecipe("tofu+peanut_butter+ginger_root+lime", "thai_peanut_tofu_stirfry");
+addRecipe("&stack:bread+cheddar+tomato+lettuce", "classic_club_sandwich_stack");
 
 
 addTool("pastafyer", {
