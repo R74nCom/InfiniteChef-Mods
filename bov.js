@@ -1,0 +1,483 @@
+addIngredient("dinosaur_meat",{
+    type:"meat",
+    color:"#4C121B",
+    shape:"ear",
+    group:"meat",
+    scale:2.5,
+    keywords:"primitive,dino,old,meat",
+    dishName:"dino_meat",
+    cookColor:"#3E1E1B",
+    adj:"dino_meat",
+    broken:"minced_dino_meat"
+  });
+
+addIngredient("minced_dino_meat",{
+    group:"meat",
+    color:"#4C121B",
+    shape:"noodles",
+    scale:1.5,
+    dishName:"minced_dino_meat",
+    cookColor:"#3E1E1B",
+    hidden:true,
+    adj:"ground_dino_meat",
+    broken:"minced_dino_meat"
+  });
+
+addIngredient("chuck",{
+    type:"beef",
+    shape:"rectangle_round_rough",
+    group:"generic",
+    scale:1.0,
+    keywords:"beef,cow,meat,steak",
+    dishName:"beef_chuck",
+    adj:"chuck",
+    hidden:false
+  });
+
+addIngredient("brisket",{
+    type:"beef",
+    shape:"cutlet",
+    color:"#9A2020",
+    group:"generic",
+    scale:1.0,
+    keywords:"beef,cow,meat,steak",
+    dishName:"briskets",
+    adj:"brisket",
+    hidden:false
+  });
+
+addIngredient("beef_ribs",{
+    type:"beef",
+    shape:"hook",
+    color:"#9A2020",
+    group:"generic",
+    scale:1.0,
+    keywords:"beef,cow,meat,ribs",
+    dishName:"beef_ribs",
+    cookColor:"#341111",
+    adj:"beef_ribs",
+    hidden:false
+  });
+
+addIngredient("pork_ribs",{
+    type:"pork",
+    shape:"hook",
+    stackShape:"hook",
+    group:"generic",
+    scale:1.0,
+    keywords:"pork,pig,meat,ribs",
+    dishName:"pork_ribs",
+    cookColor:"#341111",
+    adj:"pork_ribs",
+    hidden:false
+  });
+
+addIngredient("lamb_ribs",{
+    type:"mutton",
+    shape:"hook",
+    stackShape:"hook",
+    group:"generic",
+    scale:1.0,
+    keywords:"lamb,sheep,meat,ribs",
+    dishName:"lamb_ribs",
+    cookColor:"#341111",
+    adj:"lamb_ribs",
+    hidden:false
+  });
+
+addIngredient("venison_ribs",{
+    type:"venison",
+    shape:"hook",
+    stackShape:"hook",
+    group:"generic",
+    scale:1.0,
+    keywords:"deer,meat,ribs,venison",
+    dishName:"venison_ribs",
+    cookColor:"#341111",
+    adj:"venison_ribs",
+    hidden:false
+  });
+
+addIngredient("bone_marrow",{
+    type:"venison",
+    color:"#9A846B",
+    shape:"cylinder_short_hole",
+    group:"generic",
+    scale:0.7,
+    keywords:"meat,bone,marrow,neck",
+    dishName:"bone_marrow",
+    cookColor:"#6A543A",
+    adj:"bone_marrow",
+    hidden:false,
+    broken:"ground_bone_marrow"
+  });
+
+addIngredient("ground_bone_marrow",{
+    type:"ground_meat",
+    group:"generic",
+    scale:0.7,
+    dishName:"ground_bone_marrow",
+    cookColor:"#6A543A",
+    adj:"ground_bone_marrow",
+    hidden:true,
+    broken:"ground_bone_marrow"
+  });
+
+addIngredient("vegan_ribs",{
+    type:"meat",
+    shape:"hook",
+    group:"generic",
+    scale:1.0,
+    keywords:"vegan,vegetarian,ribs,meat,dumb",
+    dishName:"vegan_ribs",
+    cookColor:"#341111",
+    adj:"vegan_ribs",
+    hidden:false
+  });
+
+addIngredient("sirloin",{
+    type:"beef",
+    shape:"square_round_rough",
+    group:"generic",
+    scale:1.0,
+    keywords:"beef,cow,meat,steak",
+    dishName:"sirloin",
+    adj:"sirloin",
+    hidden:false
+  });
+
+addIngredient("tenderloin",{
+    type:"beef",
+    shape:"rod_wavy",
+    group:"generic",
+    scale:1.0,
+    keywords:"beef,cow,meat,steak",
+    dishName:"tenderloin",
+    adj:"tenderloin",
+    hidden:false
+  });
+
+addIngredient("oxtail",{
+    type:"beef",
+    color:"#D34B4B",
+    shape:"trefoil",
+    group:"generic",
+    scale:1.0,
+    keywords:"beef,cow,meat,ox,tail",
+    dishName:"oxtail",
+    adj:"oxtail",
+    hidden:false
+  });
+
+addIngredient("ox_tongue",{
+    type:"beef_tongue",
+    color:"#C14E4C",
+    keywords:"meat,ox,tongue",
+    dishName:"ox_tongue",
+    adj:"ox_tongue",
+    hidden:false
+  });
+
+addIngredient("breakfast_sausage",{
+    type:"sausage",
+    color:"#9F333C",
+    keywords:"breakfast,pork,pig,sausage",
+    dishName:"breakfast_sausage",
+    adj:"breakfast_sausage",
+    hidden:false
+  });
+
+addIngredient("steamship_round",{
+    type:"beef",
+    color:"#D34B4B",
+    shape:"blob_pile",
+    group:"generic",
+    scale:3.5,
+    keywords:"beef,cow,meat",
+    dishName:"steamship_round",
+    adj:"steamship_round",
+    hidden:false,
+    broken:"ground_steamship"
+  });
+
+addIngredient("ground_steamship",{
+    type:"steamship_round",
+    shape:"puddle",
+    group:"generic",
+    scale:3.5,
+    keywords:"beef,cow,meat",
+    dishName:"ground_steamship_round",
+    adj:"ground_steamship",
+    hidden:true,
+    broken:"ground_steamship"
+  });
+
+addIngredient("pig_snout",{
+    type:"pork",
+    shape:"circle_two_dots",
+    scale:0.8,
+    keywords:"pork,pig,nose,snout",
+    dishName:"pig_snout",
+    adj:"pig_snout",
+    hidden:false
+  });
+
+addIngredient("pig_brain",{
+    type:"pork",
+    shape:"brain",
+    keywords:"pork,pig,meat,brain",
+    dishName:"pig_brain",
+    adj:"pig_brain",
+    hidden:false
+  });
+
+addIngredient("sheep_brain",{
+    type:"mutton",
+    shape:"brain",
+    keywords:"lamb,sheep,meat,brain",
+    dishName:"sheep_brain",
+    adj:"sheep_brain",
+    hidden:false
+  });
+
+addIngredient("deer_brain",{
+    type:"venison",
+    shape:"brain",
+    keywords:"deer,venison,meat,brain",
+    dishName:"deer_brain",
+    adj:"deer_brain",
+    hidden:false
+  });
+
+addIngredient("horse_brain",{
+    type:"horse",
+    shape:"brain",
+    keywords:"horse,meat,brain",
+    dishName:"horse_brain",
+    adj:"horse_brain",
+    hidden:false
+  });
+
+addIngredient("horse_ribs",{
+    type:"horse",
+    shape:"hook",
+    stackShape:"hook",
+    group:"generic",
+    scale:1.0,
+    keywords:"horse,meat,ribs",
+    dishName:"horse_ribs",
+    cookColor:"#341111",
+    adj:"horse_ribs",
+    hidden:false
+  });
+
+addIngredient("chicken_breast",{
+    type:"chicken",
+    shape:"cutlet",
+    keywords:"chicken,meat,breast",
+    dishName:"chicken_breast",
+    adj:"chicken_breast",
+    hidden:false
+  });
+
+addIngredient("squirrel",{
+    type:"meat",
+    shape:"embryo",
+    scale:1.0,
+    keywords:"squirrel,rodent,meat",
+    dishName:"squirrel",
+    adj:"squirrel",
+    hidden:false
+  });
+
+addIngredient("beef_jerky",{
+    type:"beef",
+    shape:"lens",
+    scale:0.7,
+    keywords:"beef,jerky,meat",
+    dishName:"beef_jerky",
+    adj:"beef_jerky",
+    hidden:false
+  });
+
+addIngredient("chicken_jerky",{
+    type:"chicken",
+    shape:"lens",
+    scale:0.7,
+    keywords:"chicken,jerky,meat",
+    dishName:"chicken_jerky",
+    adj:"chicken_jerky",
+    hidden:false
+  });
+
+addIngredient("pork_jerky",{
+    type:"pork",
+    shape:"lens",
+    scale:0.7,
+    keywords:"pork,pig,jerky,meat",
+    dishName:"pork_jerky",
+    adj:"pork_jerky",
+    hidden:false
+});
+
+addIngredient("deer_jerky",{
+    type:"venison",
+    shape:"lens",
+    scale:0.7,
+    keywords:"deer,venison,jerky,meat",
+    dishName:"deer_jerky",
+    adj:"deer_jerky",
+    hidden:false
+});
+
+addIngredient("horse_jerky",{
+    type:"horse",
+    shape:"lens",
+    scale:0.7,
+    keywords:"horse,jerky,meat",
+    dishName:"horse_jerky",
+    adj:"horse_jerky",
+    hidden:false
+});
+
+addIngredient("horse_ribs",{
+    type:"horse",
+    shape:"hook",
+    group:"generic",
+    scale:1.0,
+    keywords:"horse,ribs,meat",
+    dishName:"horse_ribs",
+    cookColor:"#341111",
+    adj:"horse_ribs",
+    hidden:false
+  });
+
+addIngredient("lava_chicken",{
+    type:"chicken",
+    color:"#BA441C",
+    cookColor:"#7B2A0E",
+    glow:"#D88C59",
+    keywords:"chicken,lava,steves,minecraft,meat",
+    dishName:"steves_lava_chicken",
+    adj:"lava_chicken",
+    hidden:false
+  });
+
+addIngredient("chicken_brain",{
+    type:"chicken",
+    shape:"brain",
+    scale:0.4,
+    keywords:"chicken,meat,brain",
+    dishName:"chicken_brain",
+    adj:"chicken_brain",
+    hidden:false
+  });
+
+addIngredient("lava_chicken_brain",{
+    type:"lava_chicken",
+    shape:"brain",
+    scale:0.4,
+    keywords:"lava,chicken,meat,brain",
+    dishName:"lava_chicken_brain",
+    adj:"lava_chicken_brain",
+    hidden:false
+  });
+
+addIngredient("chicken_ribs",{
+    type:"chicken",
+    shape:"hook",
+    stackShape:"hook",
+    group:"generic",
+    scale:1.0,
+    keywords:"chicken,meat,ribs",
+    dishName:"chicken_ribs",
+    cookColor:"#341111",
+    adj:"chicken_ribs",
+    hidden:false
+  });
+
+addIngredient("lava_chicken_ribs",{
+    type:"lava_chicken",
+    shape:"hook",
+    stackShape:"hook",
+    group:"generic",
+    scale:1.0,
+    keywords:"lava,chicken,minecraft,meat,ribs",
+    dishName:"lava_chicken_ribs",
+    cookColor:"#341111",
+    adj:"lava_chicken_ribs",
+    hidden:false
+  });
+
+addIngredient("lava_chicken_jerky",{
+    type:"lava_chicken",
+    shape:"lens",
+    scale:0.7,
+    keywords:"lava,chicken,minecraft,jerky,meat",
+    dishName:"lava_chicken_jerky",
+    adj:"lava_chicken_jerky",
+    hidden:false
+});
+
+addIngredient("lamb_jerky",{
+    type:"mutton",
+    shape:"lens",
+    scale:0.7,
+    keywords:"sheep,lamb,jerky,meat",
+    dishName:"lamb_jerky",
+    adj:"lamb_jerky",
+    hidden:false
+});
+
+addIngredient("cow_liver",{
+    type:"beef",
+    shape:"bean_l",
+    scale:1.0,
+    keywords:"beef,cow,liver,meat",
+    dishName:"beef_liver",
+    adj:"beef_liver",
+    hidden:false
+});
+
+addIngredient("chicken_liver",{
+    type:"chicken",
+    color:"#9F1A1A",
+    shape:"bean_l",
+    scale:1.0,
+    keywords:"chicken,liver,meat",
+    dishName:"chicken_liver",
+    adj:"chicken_liver",
+    hidden:false
+});
+
+addIngredient("deer_liver",{
+    type:"venison",
+    color:"#7A5147",
+    shape:"bean_l",
+    scale:1.0,
+    keywords:"deer,venison,liver,meat",
+    dishName:"deer_liver",
+    adj:"deer_liver",
+    hidden:false
+});
+
+addIngredient("horse_liver",{
+    type:"horse",
+    color:"#691617",
+    shape:"bean_l",
+    scale:1.0,
+    keywords:"horse,liver,meat",
+    dishName:"horse_liver",
+    adj:"horse_liver",
+    hidden:false
+});
+
+addIngredient("lava_chicken_liver",{
+    type:"lava_chicken",
+    shape:"bean_l",
+    scale:1.0,
+    keywords:"lava,chicken,minecraft,liver,meat",
+    dishName:"lava_chicken_liver",
+    adj:"lava_chicken_liver",
+    hidden:false
+});
