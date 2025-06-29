@@ -1,5 +1,5 @@
 addIngredient("gummy_bear_head",{
-    color:"#FF5E7B", "#FF9B5E", "#FFC95E", "#CCFF5E", "#5EFFA1", "#5ECEFF", "#B65EFF",
+    color:["#FF5E7B", "#FF9B5E", "#FFC95E", "#CCFF5E", "#5EFFA1", "#5ECEFF", "#B65EFF"],
     shape:"circle_ears",
     type: "candy",
     meltPoint: 120,
@@ -15,7 +15,7 @@ addIngredient("candy_cane",{
     brokenShape: "dots_some_flat"
 });
 addIngredient("colorful_shelled_pieces",{ 
-    color:"#FF5E7B", "#FF9B5E", "#FFC95E", "#CCFF5E", "#5EFFA1", "#5ECEFF", "#B65EFF",
+    color:["#FF5E7B", "#FF9B5E", "#FFC95E", "#CCFF5E", "#5EFFA1", "#5ECEFF", "#B65EFF"],
     shape:"circle_xs",
     meltPoint: 120,
     type: "candy",
@@ -25,7 +25,7 @@ addIngredient("colorful_shelled_pieces",{
     keywords: "skittles, candy, pieces"
 });
 addIngredient("candy_heart",{ 
-    color:"#FF5E7B", "#FF9B5E", "#FFC95E", "#CCFF5E", "#5EFFA1", "#5ECEFF", "#B65EFF",
+    color:["#FF5E7B", "#FF9B5E", "#FFC95E", "#CCFF5E", "#5EFFA1", "#5ECEFF", "#B65EFF"],
     shape:"heart_s",
     type: "candy",
     meltPoint: 120,
@@ -42,7 +42,7 @@ addIngredient("honey_bun",{
     stackShape: "blob_pile"
 });
 addIngredient("popsicle",{ 
-    color:"#FF5E7B", "#FF9B5E", "#FFC95E", "#CCFF5E", "#5EFFA1", "#5ECEFF", "#B65EFF",
+    color:["#FF5E7B", "#FF9B5E", "#FFC95E", "#CCFF5E", "#5EFFA1", "#5ECEFF", "#B65EFF"],
     shape:"popsicle",
     meltPoint: 40,
     meltInto: "puddle",
@@ -64,7 +64,7 @@ addIngredient("coffee-covered_lady_finger",{
     keywords: "finger, tiramisu"
 });
 addIngredient("cotton_candy",{ 
-    color:"#FFB9F3", "B9EEFF", //pink
+    color:["#FFB9F3", "B9EEFF"], //pink
     shape:"clumps",
     type: "candy",
     meltPoint: 120,
@@ -106,7 +106,7 @@ addIngredient("phyllo",{
     keywords: "filo, dough"
 });
 addIngredient("chocolate_shelled_pieces",{ 
-    color:"#FF5E7B", "#FF9B5E", "#FFC95E", "#CCFF5E", "#5EFFA1", "#5ECEFF", "#B65EFF",
+    color:["#FF5E7B", "#FF9B5E", "#FFC95E", "#CCFF5E", "#5EFFA1", "#5ECEFF", "#B65EFF"],
     shape:"circle_xs",
     type: "candy",
     meltPoint: 40,
@@ -160,12 +160,12 @@ addIngredient("fortune_cookie",{
     brokenShapeColor: "#FFFFFF", //white
     keywords: "cookie, fortune, chinese",
     adj: "fortunate",
-    function showDialog() {
+    onPlace: function showDialog() {
         alert("Your fortune: You are loved!");
     }
 });
 addIngredient("sour_kids",{ 
-    color:"#FF494C", "#FF8C49", "#FFE949", "#49FF49", "#49E3FF",
+    color:["#FF494C", "#FF8C49", "#FFE949", "#49FF49", "#49E3FF"],
     type: "candy",
     meltPoint: 120,
     meltInto: "caramel",
@@ -174,7 +174,7 @@ addIngredient("sour_kids",{
     keywords: "sour, sour patch kids, kids, candy"
 });
 addIngredient("candy_corn",{ 
-    color:"#FF8C49", "#FFFFFF", "#FFE949",
+    color:["#FF8C49", "#FFFFFF", "#FFE949"],
     shape:"triangle_round",
     type: "candy",
     scale: 0.5,
@@ -184,7 +184,7 @@ addIngredient("candy_corn",{
     keywords: "candy, halloween, corn"
 });
 addIngredient("pop_rocks",{ 
-    color:"#602B1B", "#8349FF", "#FF49E9",
+    color:["#602B1B", "#8349FF", "#FF49E9"],
     shape:"dots_some_flat",
     type: "candy",
     meltPoint: 120,
@@ -254,7 +254,7 @@ addIngredient("mint_ice_cream",{
     meltInto: "cream"
 });
 addIngredient("creme_egg",{
-    color:"#602B1B","#FFCD97", //brown
+    color:["#602B1B","#FFCD97"], //brown
     shape:"ovoid",
     meltPoint: 40,
     meltInto: "chocolate_icing",
@@ -299,8 +299,8 @@ addIngredient("star_candy",{
     shape:"stellated_octahedron",
     glow: "FFFBE3",
     meltPoint: 40,
-    meltInto: "sugar"
-    broken: "pixie_dust"
+    meltInto: "sugar",
+    broken: "pixie_dust",
     keywords: "star, candy",
     dissolve: true
 });
@@ -351,13 +351,13 @@ addIngredient("bundt_cake",{
     cookName: "crispy_bundt_cake"
 });
 addIngredient("rock_candy",{
-    color: "#FF5E7B", "#FF9B5E", "#FFC95E", "#CCFF5E", "#5EFFA1", "#5ECEFF", "#B65EFF",
+    color: ["#FF5E7B", "#FF9B5E", "#FFC95E", "#CCFF5E", "#5EFFA1", "#5ECEFF", "#B65EFF"],
     type:"candy",
     shape:"crystal",
     meltPoint: 120,
     meltInto: "caramel",
     brokenShape: "crystal_tiny",
-    keywords: "candy, rock, crystal",
+    keywords: "candy, rock, crystal"
 });
 editIngredient("sugar",{
     whipped: "cotton_candy",
@@ -376,6 +376,7 @@ addRecipe("sugar+r74n","diabetic person");
 addRecipe("sugar+baby doll","diabetic person");
 
 addRecipe("honey bun+cinnamon+sugar?","cinnamon roll");
+
 addRecipe("chocolate coin+doll","leprechaun");
 
 addRecipe("chocolate coin+baby doll","leprechaun");
@@ -442,7 +443,7 @@ addRecipe("flour+oil+butter+apple juice","apple strudel");
 
 addRecipe("sugar+sugar+sugar+sugar","sugar rush!");
 
-addRecipe("chocolate coin+chocolate coin+chocolate coin+chocolate coin", "cha-ching!")
+addRecipe("chocolate coin+chocolate coin+chocolate coin+chocolate coin", "cha-ching!");
 
 addRecipe("&stack:phyllo+syrup+nut?","baklava");
 
