@@ -1,5 +1,6 @@
 /*
 cool mod made by the best ic modder: mrpotato3119
+                                        ⬆︎ yo i know that guy
 */
 
 setTimeout(() => {
@@ -341,8 +342,8 @@ addIngredient("explosion_s", {
 
 addIngredient("explosion_small", {
     color:"#898989",
-    type:"explosion"
-})
+    type:"explosion",
+});
 
 (function () {
   const oldTickPlaced = tickPlaced;
@@ -428,7 +429,7 @@ addIngredient("explosion_small", {
         if (Math.random() < 0.2) {
             const f = placeIngredient("fire", obj.x + (Math.random() - 0.5), obj.y);
         }
-        for (let j = 0; j < 3) {
+        for (let j = 0; j < 3; j++) {
             const g = placeIngredient("flare", obj.x, obj.y);
             g.done = false;
             g.done2 = false;
@@ -619,6 +620,9 @@ addIngredient("black_hole", {
     }
   };
 })();
+
+
+
 
 
 addRecipe("fallout+radiation+fire","nuclear_aftermath")
