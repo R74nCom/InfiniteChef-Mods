@@ -1,0 +1,18 @@
+// Dodanie podstawowego składnika - jabłko
+addIngredient("apple", {
+    color: "#ff1f40", // czerwone jabłko
+    type: "fruit"     // dziedziczy właściwości z 'fruit'
+});
+
+// Dodanie szczegółowego składnika - przekrojone jabłko
+addIngredient("finished_apple", { 
+    color: "#ff1f40",     // czerwony
+    innerColor: "#ffeda4",// beżowy (miąższ)
+    type: "apple",        // bazuje na jabłku
+    shape: "fruit_bipod_stem" // kształt z katalogu shapes
+});
+
+// Edycja istniejącego jabłka - zmiana koloru na zielony
+editIngredient("apple", {
+    color: "#06b000" // zielone jabłko
+});
