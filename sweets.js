@@ -192,6 +192,7 @@ addIngredient("pop_rocks",{
     keywords: "candy, powder, rocks, pop, popping",
     onCollide: (self, other) => {
         changeIngredient(other,["steam"]);
+    }
 });
 addIngredient("swedish_fish",{ 
     color:"#FF494C", //red
