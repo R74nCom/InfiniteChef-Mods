@@ -10,7 +10,7 @@ function addView(name, config) {
     const winSize = config.windowSize || 0;
     const scale = 5;
 
-    // Simple global cache so we don't recreate Image objects every frame
+
     window._assetCache = window._assetCache || {};
     const loadOnce = (src) => {
         if (!src) return null;
@@ -22,28 +22,27 @@ function addView(name, config) {
         return img;
     };
 
-    // Helper to create a masked bricks image (bricks with table-area punched out)
+   
     const createMaskedBricks = (bricksImg, tableImg, targetW, targetH) => {
-        // use a cache key that depends on sizes so we recreate if canvas size changes
+        
         const key = `bricks_masked_table::${targetW}x${targetH}`;
         if (window._assetCache[key]) return window._assetCache[key];
 
-        // offscreen canvas
+        
         const oc = document.createElement('canvas');
         oc.width = targetW;
         oc.height = targetH;
         const octx = oc.getContext('2d');
 
-        // draw bricks full size
+        
         octx.drawImage(bricksImg, 0, 0, targetW, targetH);
 
-        // punch out where the table is opaque: draw table using destination-out
-        // This removes bricks pixels in areas where table is drawn (so bricks won't show under table)
+        
         octx.globalCompositeOperation = 'destination-out';
         octx.drawImage(tableImg, 0, 0, targetW, targetH);
         octx.globalCompositeOperation = 'source-over';
 
-        // convert to image for faster drawImage calls later
+        
         const masked = new Image();
         masked.src = oc.toDataURL();
         window._assetCache[key] = masked;
@@ -67,20 +66,20 @@ function addView(name, config) {
     viewRenderer[modeName] = function(hideGUI) {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-        // ASSETS
+        
         const bricksImg = loadOnce('bricks.png');
         const tableImg = loadOnce('table.png');
         const modeImg = loadOnce(config.gamesprite || 'bowl.png');
 
-        // fallback sizes (avoid zeros)
+        
         const fallbackW = 128;
         const fallbackH = 128;
         const viewImgW = (modeImg && modeImg.width) ? modeImg.width : (window.viewImageWidth || fallbackW);
         const viewImgH = (modeImg && modeImg.height) ? modeImg.height : (window.viewImageHeight || fallbackH);
 
-        // vData guard
+        
         if (!viewData[currentView]) {
-            // if images loaded, draw a minimal background (masked bricks if possible)
+            
             if (bricksImg && bricksImg.complete && tableImg && tableImg.complete) {
                 const masked = createMaskedBricks(bricksImg, tableImg, canvas.width, canvas.height);
                 if (masked && masked.complete) ctx.drawImage(masked, 0, 0, canvas.width, canvas.height);
@@ -95,10 +94,10 @@ function addView(name, config) {
 
         var vData = viewData[currentView] || { temp: 20 };
 
-        // 1) BRICKS (masked so no bricks under the table)
+       
         if (bricksImg && bricksImg.complete && tableImg && tableImg.complete) {
             const masked = createMaskedBricks(bricksImg, tableImg, canvas.width, canvas.height);
-            // masked image may still be loading from toDataURL; fallback to raw bricks until masked ready
+            
             if (masked && masked.complete && masked.naturalWidth > 0) {
                 ctx.drawImage(masked, 0, 0, canvas.width, canvas.height);
             } else {
@@ -108,16 +107,16 @@ function addView(name, config) {
             ctx.drawImage(bricksImg, 0, 0, canvas.width, canvas.height);
         }
 
-        // 2) TABLE (draw above bricks)
+        
         if (tableImg && tableImg.complete) {
             ctx.drawImage(tableImg, 0, 0, canvas.width, canvas.height);
         }
 
-        // compute centered draw position for pot
+        
         var drawX = canvas.width/2 - (viewImgW * scale)/2;
         var drawY = canvas.height/2 - (viewImgH * scale)/2 + 75;
 
-        // 3) Glow and POT (back)
+        
         ctx.save();
         ctx.shadowOffsetY = 7;
         ctx.shadowBlur = 20;
@@ -128,7 +127,7 @@ function addView(name, config) {
         if (modeImg && modeImg.complete) ctx.drawImage(modeImg, drawX, drawY, viewImgW * scale, viewImgH * scale);
         ctx.restore();
 
-        // 4) If there's a window, draw the scene inside the window area (so interior shows TABLE not BRICKS)
+        
         if (winSize > 0) {
             ctx.save();
             const cx = canvas.width / 2;
@@ -146,7 +145,7 @@ function addView(name, config) {
             ctx.restore();
         }
 
-        // 5) LIQUID / INGREDIENTS
+        
         if (vData.liquid && vData.liquid > 0) {
             const r = (vData.liquidR || 0);
             const g = (vData.liquidG || 0);
@@ -165,7 +164,7 @@ function addView(name, config) {
         drawPlaced();
         if (!hideGUI) drawCursor();
 
-        // 6) POT FRONT / WINDOW ALPHA
+        
         if (winSize > 0) {
             ctx.globalAlpha = 0.4;
             if (modeImg && modeImg.complete) ctx.drawImage(modeImg, drawX, drawY, viewImgW * scale, viewImgH * scale);
@@ -189,7 +188,7 @@ function addView(name, config) {
         ctx.globalAlpha = 1.0;
     };
 
-    // UI button & initial view data (kept as you had it)
+    
     var controlsBar = document.getElementById('controlsBar');
     if (!document.getElementById(`button-${modeName}`)) {
         var button = document.createElement('button');
