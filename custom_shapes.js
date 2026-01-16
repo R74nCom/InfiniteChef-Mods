@@ -1,4 +1,5 @@
-//use addShape("<name>",{url:"<image url>"}); and then use it in any function that can use shapes 
+//use addShape("<name>",{url:"<image url>"}); and then use it in any function that can use shapes
+//to use this script in your mod you can use the addMod function
 const customImageCache = Object.create(null);
 const originalLoadImage = window.loadImage;
 window.loadImage = function (src) {
