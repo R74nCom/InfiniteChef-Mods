@@ -436,6 +436,7 @@ addIngredient("explosion_small", {
             g.vx = (Math.random() - 0.5) * 5
             g.vy = -2;
         }
+        deleteIngredient(obj);
     }  
 
     if (obj.id === "explosion_f") {
