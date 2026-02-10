@@ -253,13 +253,6 @@ addIngredient("fallout", {
 
                 }
             }
-
-            if (obj.id === "gunpowder") {
-                const view = viewData[currentView]
-                if (view.temp > 250) {
-                    changeIngredient(obj, "explosion_small")
-                }
-            }
         }
     };
 })();
@@ -273,7 +266,9 @@ addIngredient("gunpowder", {
         fire: {set1: "explosion_small"},
         plasma: {set1: "explosion_small"},
         radiation: {set1: "explosion_small"}
-    }
+    },
+    meltInto:"explosion_small",
+    meltPoint:250
 })
 
 addIngredient("bomb", {
