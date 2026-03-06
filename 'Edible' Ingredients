@@ -1,0 +1,43 @@
+//more random stuff yipeee
+
+addIngredient("skull",{
+  type:"shape",
+  shape:"skull",
+  brokenShape:"oviod_scaly",
+  color:"#fffde6",
+  adj:"skull"
+	keywords:"skull,bone",
+
+addIngredient("among_us",{
+  type:"shape",
+  shape:"sus",
+  brokenShape:"squares_some",
+  color:"#ff0000",
+  adj:"suspicious"
+  keywords:"sus,among",
+
+addIngredient("child",{
+  type:"meat",
+  shape:"figure",
+  brokenShape:"dots",
+  color:"#ab8282",
+  adj:"young"
+  keywords:"child,kid,human",
+
+addIngredient("pawn",{
+  type:"rock",
+  shape:"pawn",
+  brokenShape:"beans_some",
+  color:"#d9d9d9",
+  adj:"pawn"
+  keywords:"pawn,chess",
+
+	addRecipe("pawn+pawn","chess");
+
+	addIngredient("battery",{
+  	type:"rock",
+    shape:"battery",
+    brokenShape:"battery_low",
+	  color:"##21b030",
+		adj:"electric"
+	  keywords:"battery,inedible",
