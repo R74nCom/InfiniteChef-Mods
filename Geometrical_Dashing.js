@@ -17,8 +17,8 @@ addIngredient("extreme_demon", {
 });
 
 
-addRecipe("tide+wave","tidal wave");
+addRecipe("tide+wave","TIDAL WAVE!!! GD REFERENCE!!!");
 
-addRecipe("extreme_demon+wave","tsunami 2.2");
+addRecipe("extreme_demon+wave","Tsunami better?");
 
 // still thinking of flame and wall for flame wall or person+person for society
