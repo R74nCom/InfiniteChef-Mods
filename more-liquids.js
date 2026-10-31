@@ -1,24 +1,15 @@
 
 // A mod that adds more liquids and recipes with them. Will be updated in the future. Created by Gfdcvn.
-addIngredient("aloe_water",{
-    type:"liquid",
-    color:"#d9ffce",
-});
-addIngredient("hibiscus_extract",{
-    type:"liquid",
-    color:"#8B0000",
-});
-addIngredient("carrot_juice",{
-    type:"liquid",
-    color:"#ffd17a",
-});
-addIngredient("rhubarb_juice",{
-    type:"liquid",
-    color:"#E34253",
+addIngredient("super_water", {
+    type:"liquid", 
+    color:"#9fabfa" // normal color
 });
 
 
-addRecipe("aloe_water+apple?+peach","fruit flavoured water");
-addRecipe("hibiscus_extract+honey?+ice_cube","Hibiscus Iced Tea");
-addRecipe("carrot_juice+ginger_root+garlic+broth+salt","Ginger Carrot Soup");
-addRecipe("rhubarb_juice+apple+peach+honey","Rhubarb Smoothie");
+addIngredient("expired_milk", {
+   type:"liquid",
+   color:"#cfe0b0"
+});
+
+
+//no recipes because infinite chef kept crashing sorry guys
