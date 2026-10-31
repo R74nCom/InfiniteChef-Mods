@@ -12,5 +12,4 @@ color:"#cfe0b0"
 });
 
 
-addRecipe("super_water+flour","chocolate_dough");
-addRecipe("expired_milk+bacteria","vinegar_milk");
+//no recipes because infinite chef kept crashing sorry guys
